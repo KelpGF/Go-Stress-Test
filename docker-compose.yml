@@ -1,0 +1,8 @@
+services:
+  go-app:
+    image: golang:1.23
+    entrypoint: sh -c "tail -f /dev/null"
+    container_name: go-stress-test
+    volumes:
+      - .:/app
+    working_dir: /app
